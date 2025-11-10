@@ -1,11 +1,10 @@
-# PHP Money Manager
+# Money Manager
 
 A personal finance management web application built with PHP and MySQL. Track your income, expenses, budgets, and financial goals with an intuitive dashboard and reporting features.
 
 ## Repository
 
 🔗 **GitHub**: [https://github.com/UdaraIrunika/PHP-Money-Manager.git](https://github.com/UdaraIrunika/PHP-Money-Manager.git)
-🔗 **If you want css outer file add thise line to php files**: [<link rel="stylesheet" href="assets/css/style.css">](<link rel="stylesheet" href="assets/css/style.css">)
 
 ## Features
 
@@ -75,7 +74,7 @@ A personal finance management web application built with PHP and MySQL. Track yo
 money_manager/
 ├── assets/
 │   ├── css/
-│   │   └── style.css           # Application styles
+│   │   └── style.css           # Unified application styles
 │   └── js/
 │       └── app.js              # Client-side JavaScript
 ├── sql/
@@ -93,6 +92,36 @@ money_manager/
 ├── reports.php                 # Reports and analytics
 └── export_csv.php              # CSV export functionality
 ```
+
+## CSS Architecture
+
+The application uses a **unified CSS approach** with a single stylesheet (`assets/css/style.css`) that provides:
+
+### Key Features
+1. **Complete Coverage** - All styles for login, dashboard, transactions, categories, budgets, goals, and reports pages
+2. **Consistent Design System** - Unified color scheme, typography, and component styles
+3. **Responsive Design** - Mobile-first approach with breakpoints for all screen sizes
+4. **Reusable Components** - Cards, tables, forms, buttons, and progress bars
+5. **Utility Classes** - Helper classes for common styling needs
+6. **Performance Optimized** - Single file reduces HTTP requests
+7. **Maintainable** - Well-organized with clear sections and comments
+
+### Usage Instructions
+
+1. Save the unified CSS file as `assets/css/style.css`
+
+2. Include it in all HTML files:
+   ```html
+   <link rel="stylesheet" href="assets/css/style.css">
+   ```
+
+3. Remove all inline styles from HTML files for consistency
+
+### Benefits
+- ✅ Faster page loads (fewer HTTP requests)
+- ✅ Easier maintenance (single source of truth)
+- ✅ Consistent user experience across all pages
+- ✅ Better browser caching
 
 ## Security Features
 
