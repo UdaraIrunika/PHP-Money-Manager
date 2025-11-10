@@ -1,0 +1,83 @@
+/* Modern UI for Money Manager */
+:root{
+	--bg: #f7f9fc;
+	--card: #ffffff;
+	--muted: #6b7280;
+	--primary: #4e73df;
+	--success: #1cc88a;
+	--danger: #e74a3b;
+	--accent: #36b9cc;
+	--glass: rgba(255,255,255,0.6);
+	--shadow: 0 6px 18px rgba(15,23,42,0.06);
+	--radius: 10px;
+	--max-width:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.45;margin:0;background:linear-gradient(180deg,var(--bg),#eef2f7);color:#0f172a}
+
+.container{max-width:var(--max-width);margin:28px auto;padding:22px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* Header */
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand h1{font-size:18px;margin:0;color:var(--primary)}
+.nav{display:flex;align-items:center;gap:10px}
+.nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600}
+.nav a:hover{background:var(--glass);color:var(--primary)}
+
+/* Grid and cards */
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+.card{background:linear-gradient(180deg, #ffffff, #fbfdff);padding:14px;border-radius:12px;border:1px solid rgba(79,70,229,0.06);box-shadow:0 6px 12px rgba(79,70,229,0.03)}
+.card .small{font-size:12px;color:var(--muted);margin-bottom:8px}
+.card .value{font-size:20px;font-weight:700}
+
+/* Forms */
+.form-row{display:flex;gap:12px;margin-bottom:12px}
+.form-row .col{flex:1}
+label{display:block;font-weight:600;margin-bottom:6px;color:#0f172a}
+input[type=text],input[type=password],input[type=date],input[type=number],select,textarea{width:100%;padding:10px;border:1px solid #e6e9ef;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff)}
+textarea{min-height:80px}
+button{background:var(--primary);color:#fff;border:0;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:700}
+button.ghost{background:transparent;color:var(--primary);border:1px solid rgba(78,115,223,0.12)}
+
+/* Table */
+.table{width:100%;border-collapse:collapse;margin-top:10px;border-radius:8px;overflow:hidden}
+.table thead{background:#fbfbff}
+.table th,.table td{padding:12px 14px;border-bottom:1px solid #f1f5f9;text-align:left;font-size:14px}
+.table tbody tr:hover{background:#fbfcff}
+
+/* Filters and helpers */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.small{font-size:13px;color:var(--muted)}
+.badge{display:inline-block;padding:6px 8px;border-radius:999px;background:#f1f5f9;color:#111;font-weight:700}
+
+/* Legend */
+.pie-legend{display:flex;flex-direction:column;gap:8px}
+.legend-item{display:flex;align-items:center;gap:8px}
+.legend-color{width:14px;height:14px;border-radius:4px}
+
+/* Responsive */
+@media (max-width:960px){
+	.kpi{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+	.form-row{flex-direction:column}
+	.kpi{grid-template-columns:1fr}
+	.nav{gap:6px}
+}
+
+/* Utility */
+.text-muted{color:var(--muted)}
+.text-danger{color:var(--danger)}
+.text-success{color:var(--success)}
+
+/* small tweak for inline color swatches */
+.swatch{width:20px;height:14px;border-radius:6px;border:1px solid rgba(0,0,0,0.06)}
+
+/* improve forms on very small screens */
+@media (max-width:420px){
+	.container{padding:14px;margin:10px}
+	.table th,.table td{padding:8px}
+}
