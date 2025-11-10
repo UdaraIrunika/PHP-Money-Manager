@@ -5,6 +5,7 @@ A personal finance management web application built with PHP and MySQL. Track yo
 ## Repository
 
 🔗 **GitHub**: [https://github.com/UdaraIrunika/PHP-Money-Manager.git](https://github.com/UdaraIrunika/PHP-Money-Manager.git)
+🔗 **If you want css outer file add thise line to php files**: [<link rel="stylesheet" href="assets/css/style.css">](<link rel="stylesheet" href="assets/css/style.css">)
 
 ## Features
 
