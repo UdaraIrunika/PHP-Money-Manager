@@ -2,6 +2,10 @@
 
 A personal finance management web application built with PHP and MySQL. Track your income, expenses, budgets, and financial goals with an intuitive dashboard and reporting features.
 
+
+https://github.com/user-attachments/assets/2ab7d539-8718-4515-8ddb-7e42318aa318
+
+
 ## Repository
 
 🔗 **GitHub**: [https://github.com/UdaraIrunika/PHP-Money-Manager.git](https://github.com/UdaraIrunika/PHP-Money-Manager.git)
